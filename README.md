@@ -77,7 +77,7 @@ Within each episode, the process unfolds timestep by timestep. At every step, th
 Whenever an episode concludes, indicated by the `done` flag from the environment, the environment is reset to start a new episode, ensuring continuous and diverse learning opportunities.
 
 ### Images
-
+<br>
 1. **Initial State of the Environment**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/55895edc-d123-4e2b-b8ea-5ce91a77110b)
    - "Initial state of the lunar lander environment."
