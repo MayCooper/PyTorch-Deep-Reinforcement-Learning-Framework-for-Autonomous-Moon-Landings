@@ -87,6 +87,9 @@ Whenever an episode concludes, indicated by the `done` flag from the environment
 
    - "State of the lunar lander environment at the end of an episode."
 
+3. **Output for Episode Iterations**
+![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/0a77a80e-78dd-4867-88dd-3e8e6c0d8e7c)
+
 ### Plots
 
 1. **Reward Trends Per Episode and Episode Duration Trends**:
@@ -127,7 +130,8 @@ Whenever an episode concludes, indicated by the `done` flag from the environment
    - "Decomposition of episode rewards into trend, seasonal, and residual components."
 
 
-8. **Average Agent Path in Environment**:
+8. **Agent Path in Environment**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/efe47ec2-0713-4d0e-b6b7-e9d6cbb87c20)
 
+9. **Average Agent Path in Environment**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/938b3225-1db6-4b4e-af82-f5f43b948a36)
