@@ -126,5 +126,7 @@ Whenever an episode concludes, indicated by the `done` flag from the environment
 
 9. **Average Agent Path in Environment**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/938b3225-1db6-4b4e-af82-f5f43b948a36)
+![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/e4a6a90e-ebfb-4ee7-9fb6-a27a164fa7c9)
+
    - "Average path taken by the agent across multiple episodes."
    - "Highlights the consistency and variance in the agent's navigation."
