@@ -5,6 +5,7 @@ Implementing the Deep Deterministic Policy Gradient (DDPG) algorithm in PyTorch,
 
 ### Deep Deterministic Policy Gradient (DDPG) Agent for Continuous Control in Lunar Lander Environment
 By May Cooper
+<br>
 ![lunar_lander](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/87950feb-1d09-4350-8cec-ffa10af02bdc)
 
 This project implements a Deep Deterministic Policy Gradient (DDPG) agent to solve the Lunar Lander Continuous-v2 environment from OpenAI Gym. The DDPG algorithm is an actor-critic method designed for environments with continuous action spaces, making it suitable for complex control tasks like lunar landing.
