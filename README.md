@@ -83,55 +83,48 @@ Whenever an episode concludes, indicated by the `done` flag from the environment
 2. **End of Episode State**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/2bd4b7ac-8cc8-4e0b-939f-2c766943fbe5)
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/1129d59e-be8d-45f6-9c97-4c8994b1f77c)
-
-
    - "State of the lunar lander environment at the end of an episode."
 
-3. **Output for Episode Iterations**
+3. **Output for Episode Iterations**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/0a77a80e-78dd-4867-88dd-3e8e6c0d8e7c)
 
 ### Plots
 
 1. **Reward Trends Per Episode and Episode Duration Trends**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/9d1ff093-8ac9-4ce6-bc79-40505926c556)
-
    - "Reward trends over episodes, showing both the sliding average and per episode rewards."
    - "Episode duration trends over time, showing both the sliding average and per episode durations."
 
 2. **Distribution of Episode Rewards**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/113be4a4-8b59-47c5-bf7d-31390b7ccdf4)
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/5be8ae4b-5ad4-4c1d-84d8-373b93e4c1fe)
-
    - "Histogram showing the distribution of rewards across all episodes."
 
 3. **Episode Length Over Time**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/37988ae5-c86f-4677-aae7-f411ce73ee92)
-
    - "Episode lengths plotted over time to visualize changes in episode duration."
 
 4. **Smoothed Episode Length Over Time**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/18fe3ecf-a4a5-41b7-8b8a-dd1be0d51422)
-
    - "Smoothed episode lengths over time using a moving average to highlight trends."
 
 5. **Correlation Between Episode Duration and Rewards**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/7df9003a-5195-46ea-aad0-26bad8bdc378)
-
    - "Scatter plot showing the correlation between episode duration and rewards."
 
 6. **Reward Distribution Across Episode Batches**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/0ed66d8f-dcb0-4eed-b5fe-d19415465e14)
-
    - "Box plot showing the distribution of rewards across different episode batches."
 
 7. **Seasonal Decomposition of Episode Rewards**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/1957b979-2361-43eb-8970-bb388124372c)
-
    - "Decomposition of episode rewards into trend, seasonal, and residual components."
-
 
 8. **Agent Path in Environment**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/efe47ec2-0713-4d0e-b6b7-e9d6cbb87c20)
+   - "Visualization of the agent's path within the environment."
 
 9. **Average Agent Path in Environment**:
 ![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/938b3225-1db6-4b4e-af82-f5f43b948a36)
+   - "Average path taken by the agent across multiple episodes."
+   - "Highlights the consistency and variance in the agent's navigation."
