@@ -132,3 +132,40 @@ Whenever an episode concludes, indicated by the `done` flag from the environment
 
    - "Average path taken by the agent across multiple episodes."
    - "Highlights the consistency and variance in the agent's navigation."
+  
+# Advanced DDPG: Integrating Clipped Double Q-Learning
+
+The traditional **Deep Deterministic Policy Gradient (DDPG)** algorithm is a model-free, off-policy actor-critic method that uses deep function approximators capable of learning policies in high-dimensional, continuous action spaces. However, it is prone to overestimation bias due to its single critic architecture.
+
+**Clipped Double Q-Learning**, originally popularized by the TD3 (Twin Delayed DDPG) algorithm, addresses this by employing two critic networks. Here's how it improves upon the standard DDPG:
+
+- **Dual Critic Networks**: This method deploys two critic networks (and their corresponding target critics) instead of one. This dual architecture is instrumental in mitigating overestimation by leveraging the minimum value of the two critics' estimates during the update phase.
+- **Clipped Double Q-Update**: During the critic update process, the lower of the two critic values is used. This approach is believed to provide a more stable and reliable learning signal compared to using a single estimate.
+
+By incorporating Clipped Double Q-Learning into DDPG, we aim to boost stability and performance, especially in environments characterized by high variance in reward structures and complex, multi-dimensional action spaces.
+
+![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/acd1af28-7db7-42ea-b311-81c19cc79de7)
+
+
+## LunarLander Environment Overview
+
+The **LunarLander** environment, provided by OpenAI Gym, offers a simulation where an agent is tasked with safely landing a spacecraft on a specified landing pad. It mirrors the challenges of actual lunar landings by offering various rewards and penalties based on the agent's actions:
+
+- **Landing Reward**: Successfully navigating to the landing pad and shutting off the engines yields a significant reward.
+- **Safe Landing Bonus**: A safe landing, where the lander maintains stability and accuracy on the pad, earns a substantial positive reward.
+- **Unsafe Landing Penalty**: An unsafe landing, where the lander crashes or misaligns, incurs a significant negative reward.
+- **Fuel Usage Penalty**: Each activation of the engines attracts a minor negative reward, simulating fuel consumption and promoting efficient fuel use.
+
+### Variants of LunarLander
+
+LunarLander is available in two variants within OpenAI Gym:
+
+- **Discrete LunarLander**: In this version, the agent chooses from a set of discrete actions, such as firing specific engines.
+- **Continuous LunarLander**: This variant allows the agent to adjust the thrust of two main engines within a continuous range from -1 to 1, demanding finer control and offering a greater challenge due to the nuanced action space.
+
+![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/3a97c13e-0dd9-41f5-b179-53fdfd754fde)
+![image](https://github.com/MayCooper/PyTorch-Deep-Reinforcement-Learning-Framework-for-Autonomous-Moon-Landings/assets/82129870/30a2ea84-bc2d-4fce-a956-71d1dd976478)
+
+
+The continuous version, in particular, serves as an excellent testbed for reinforcement learning algorithms that handle continuous action spaces, such as the enhanced DDPG with Clipped Double Q-Learning.
+
